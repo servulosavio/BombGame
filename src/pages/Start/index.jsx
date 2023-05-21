@@ -8,7 +8,7 @@ export default function Start() {
   };
 
   const handleNavToPlayTogether = () => {
-    console.log("Teste de Play together");
+    alert("Teste de Play together");
   };
 
   const handleNavToRoles = () => {
