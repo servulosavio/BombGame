@@ -1,18 +1,22 @@
 import React from "react";
 import { Container, Logo, SubTitle, Title, Rules } from "./styles.js";
 import ButtonComponent from "../../components/Buttons/index.jsx";
+import { useNavigation } from "@react-navigation/native";
+import { Alert } from "react-native";
 
 export default function Start() {
+  const navigation = useNavigation();
+
   const handleNavToPlayAlone = () => {
-    console.log("Teste de Play Alone");
+    Alert.alert("Teste de Play Alone");
   };
 
   const handleNavToPlayTogether = () => {
-    alert("Teste de Play together");
+    Alert.alert("Teste de Play together");
   };
 
-  const handleNavToRoles = () => {
-    console.log("Teste de Roves");
+  const handleNavToRules = () => {
+    navigation.navigate("Rules");
   };
 
   return (
@@ -31,7 +35,7 @@ export default function Start() {
         buttonText={"Jogar Em Dupla"}
         handlePress={handleNavToPlayTogether}
       />
-      <Rules onPress={handleNavToRoles}>Ver as regras do jogo</Rules>
+      <Rules onPress={handleNavToRules}>Ver as regras do jogo</Rules>
     </Container>
   );
 }
