@@ -8,7 +8,7 @@ export default function Start() {
   const navigation = useNavigation();
 
   const handleNavToPlayAlone = () => {
-    Alert.alert("Teste de Play Alone");
+    navigation.navigate("PlayAlone");
   };
 
   const handleNavToPlayTogether = () => {
