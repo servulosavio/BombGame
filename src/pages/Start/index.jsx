@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Logo, SubTitle, Title, Rules } from "./styles.js";
 import ButtonComponent from "../../components/Buttons/index.jsx";
 import { useNavigation } from "@react-navigation/native";
-import { Alert } from "react-native";
 
 export default function Start() {
   const navigation = useNavigation();
@@ -12,7 +11,7 @@ export default function Start() {
   };
 
   const handleNavToPlayTogether = () => {
-    Alert.alert("Teste de Play together");
+    navigation.navigate("PlayTogether");
   };
 
   const handleNavToRules = () => {
