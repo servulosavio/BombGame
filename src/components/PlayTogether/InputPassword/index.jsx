@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Container, Input, InputContainer } from "./styles";
+import { Container, Input, InputContainer } from "./styled";
 import { Keyboard } from "react-native";
 
 export default function InputPassword() {

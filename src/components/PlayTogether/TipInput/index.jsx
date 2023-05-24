@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Input, InputContainer, TipTitle } from "./styles";
+import { Container, Input, InputContainer, TipTitle } from "./styled";
 
 export default function TipInput() {
   return (

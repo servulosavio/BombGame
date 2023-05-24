@@ -7,7 +7,7 @@ import {
   TipText,
   TipTitle,
   Title,
-} from "./styles";
+} from "./styled";
 import { Alert, ImageBackground } from "react-native";
 
 import bombImg from "../../assets/bomba.png";

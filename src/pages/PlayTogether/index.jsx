@@ -1,5 +1,5 @@
 import React from "react";
-import { BombMessage, Container, ScrollContainer, Title } from "./styles";
+import { BombMessage, Container, ScrollContainer, Title } from "./styled";
 import InputTimer from "../../components/PlayTogether/InputTimer";
 import TipInput from "../../components/PlayTogether/TipInput";
 import InputPassword from "../../components/PlayTogether/InputPassword";

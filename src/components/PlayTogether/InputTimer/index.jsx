@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { ImageBackground, Keyboard } from "react-native";
 
 import bombImg from "../../../assets/bomba.png";
-import { Input, InputContainer, TextTimer, Timer } from "./styles";
+import { Input, InputContainer, TextTimer, Timer } from "./styled";
 
 export default function InputTimer() {
   const input1 = useRef();

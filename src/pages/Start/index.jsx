@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Logo, SubTitle, Title, Rules } from "./styles.js";
+import { Container, Logo, SubTitle, Title, Rules } from "./styled";
 import ButtonComponent from "../../components/Buttons/index.jsx";
 import { useNavigation } from "@react-navigation/native";
 
