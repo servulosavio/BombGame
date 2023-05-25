@@ -19,6 +19,7 @@ import BombService from "../../services/BombApp";
 import api from "../../services/api/api";
 
 export default function PlayAlone() {
+  const navigation = useNavigation();
   const [started, setStarted] = useState(false);
   const [pin, setPin] = useState(["", "", ""]);
   const [hours, setHours] = useState("00");
@@ -27,8 +28,6 @@ export default function PlayAlone() {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const [intervalId, setIntervalId] = useState();
-
-  const navigation = useNavigation();
 
   function handleStartGame() {
     BombService.bombStartGame({ setStarted, hours, minutes, seconds });
